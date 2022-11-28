@@ -16,4 +16,5 @@ def find_number_of_messages(data: dict)->int:
         if i['type']=='message':
             s+=1 
     return s
-print(find_number_of_messages(read_data('data/result.json')))
+data = read_data('data/result.json')
+print(find_number_of_messages(data))
