@@ -14,6 +14,6 @@ def find_all_users_name(data: dict)->list:
     for i in users:
         if i.get('actor','none')!='none':
             l+=[i['actor']]
-    l1=list(set(l))
+    l1=list(set(l)) 
     return l1
 print(find_all_users_name(read_data('data/result.json')))

@@ -15,6 +15,6 @@ def find_all_users_id(data: dict)->list:
         if i.get('actor_id','none')!='none':
             if i['actor_id'][0:4]=='user':
                 l+=[i['actor_id']]
-    l1=list(set(l))
+    l1=list(set(l)) 
     return l1
 print(find_all_users_id(read_data("data/result.json")))
